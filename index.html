@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Librerie -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <title>Bio Link</title>
+</head>
+
+<body>
+
+<div class="theme-switch">
+  <button id="theme-toggle">🌙 Modalità Notte</button>
+</div>
+
+<header>
+  <img src="https://i.imgur.com/Iqehbpe.png" class="profile-img">
+  <h1>@Kathia Minano</h1>
+  <p>Design Student | Specialized in Interior Design</p>
+</header>
+
+<main class="container">
+
+  <!-- BOTTONI -->
+  <a href="https://www.vinted.it/member/184225014-kathia186" class="btn vinted animate__animated animate__fadeInUp animate__delay-custom-1">
+    <i class="fa-solid fa-shirt"></i> Vinted
+  </a>
+
+  <a href="https://www.canva.com/design/DAHC-GVW6eI" class="btn canva animate__animated animate__fadeInUp animate__delay-custom-2">
+    <i class="fa-solid fa-palette"></i> OC's Projects
+  </a>
+
+  <a href="https://www.canva.com/design/DAHC-CahMM4" class="btn design animate__animated animate__fadeInUp animate__delay-custom-3">
+    <i class="fa-solid fa-house"></i> Interior Design Projects
+  </a>
+
+  <a href="https://www.instagram.com/kathia_186" class="btn instagram animate__animated animate__fadeInUp animate__delay-custom-4">
+    <i class="fa-brands fa-instagram"></i> Instagram
+  </a>
+
+  <a href="https://twitter.com/ittoenjoier" class="btn twitter animate__animated animate__fadeInUp animate__delay-custom-5">
+    <i class="fa-brands fa-x-twitter"></i> Twitter
+  </a>
+
+  <a href="https://www.goodreads.com/ittoenjoier" class="btn goodreads animate__animated animate__fadeInUp animate__delay-custom-6">
+    <i class="fa-brands fa-goodreads"></i> Goodreads
+  </a>
+
+  <!-- LINK CREDITS -->
+  <a href="credits.html" class="btn">Credits</a>
+
+  <!-- TABELLA -->
+  <table>
+    <thead>
+      <tr>
+        <th>Piattaforma</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Vinted</td><td>Vendita</td></tr>
+      <tr><td>Instagram</td><td>Social</td></tr>
+      <tr><td>Twitter</td><td>Social</td></tr>
+      <tr><td>Goodreads</td><td>Libri</td></tr>
+    </tbody>
+  </table>
+
+  <!-- FORM -->
+  <form id="nomeForm">
+    <input type="text" placeholder="Kathia Minano" required >
+    <input type="email" id="campoEmail" placeholder="minanokathia@gmail.com" required>
+    <textarea placeholder="Scrivi un messaggio qui "required></textarea>
+    <button type="submit">invia</button>
+  </form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
