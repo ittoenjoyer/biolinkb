@@ -7,22 +7,22 @@
 }
 
 /* ============================= */
-/* BODY */
+/* BODY - VERSIONE APP (NO CORNICI) */
 body, html {
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0; /* 🔥 rimosso */
   font-family: 'Poppins', sans-serif;
   background-color: #d9dee5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ============================= */
-/* DARK MODE TOGGLE (NUOVO) */
+/* DARK MODE TOGGLE */
 .theme-switch {
   position: fixed;
   top: 15px;
@@ -53,6 +53,13 @@ body.dark-mode #theme-toggle {
 }
 
 /* ============================= */
+/* HEADER */
+header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* ============================= */
 /* FOTO PROFILO */
 .profile-img {
   width: 25vw;
@@ -80,10 +87,14 @@ p {
 }
 
 /* ============================= */
-/* CONTENITORE */
+/* CONTAINER */
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 420px;
+  padding: 0 20px; /* 🔥 spazio interno */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ============================= */
@@ -108,7 +119,7 @@ p {
   font-size: 1.3rem;
 }
 
-/* Colori */
+/* COLORI */
 .btn.vinted { background-color: #43B86C; }
 .btn.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
 .btn.twitter { background-color: #1DA1F2; }
@@ -116,7 +127,7 @@ p {
 .btn.canva { background-color: #00C4CC; }
 .btn.design { background-color: #FF6F61; }
 
-/* Hover */
+/* HOVER */
 .btn:hover {
   filter: brightness(1.1);
   transform: translateY(-2px);
@@ -124,7 +135,7 @@ p {
 }
 
 /* ============================= */
-/* ANIMAZIONI SEQUENZIALI */
+/* ANIMAZIONI */
 .animate__delay-custom-1 { animation-delay: 0.2s; }
 .animate__delay-custom-2 { animation-delay: 0.4s; }
 .animate__delay-custom-3 { animation-delay: 0.6s; }
@@ -181,10 +192,6 @@ body.dark-mode {
 body.dark-mode h1 { color: #FFD700; }
 body.dark-mode p { color: #CCCCCC; }
 
-body.dark-mode .btn {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
 body.dark-mode th,
 body.dark-mode td,
 body.dark-mode input,
@@ -199,6 +206,9 @@ body.dark-mode textarea {
 @media (max-width: 400px) {
   .profile-img { width: 30vw; max-width: 100px; }
   h1 { font-size: 18px; }
+  p { font-size: 13px; }
+  .btn { font-size: 16px; padding: 14px 0; }
+}
   p { font-size: 13px; }
   .btn { font-size: 16px; padding: 14px 0; }
 }
