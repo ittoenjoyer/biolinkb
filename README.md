@@ -1,1 +1,1 @@
-# biolinkb
+# biolink
